@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Blood Share</string>
+    <string name="main_user">Username</string>
+    <string name="main_pass">Password</string>
+    <string name="btn_main_login"><b>LOGIN</b></string>
+    <string name="btn_main_fb"><b>CONNECT WITH FACEBOOK</b></string>
+    <string name="txt_main_or"><b>OR</b></string>
+    <string name="txt_main_acc">doesnt have account?</string>
+    <string name="txt_main_reg"><b>Register</b></string>
 </resources>
