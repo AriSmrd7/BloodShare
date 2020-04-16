@@ -25,23 +25,39 @@
     <string name="txt_reg">Register</string>
     <string name="terms_reg">Agree with Terms and Condition</string>
 
-    <string-array name="Blood_Type">
-        <item name="A" />
-        <item name="B" />
-        <item name="O" />
-        <item name="AB" />
+    <string-array name="gol_dar">
+        <item name="">Blood Type</item>
+        <item name="A">A</item>
+        <item name="B">B</item>
+        <item name="O">O</item>
+        <item name="AB">AB</item>
     </string-array>
 
+    <string-array name="reshus">
+        <item name="">Reshus</item>
+        <item name="Positive">Positive</item>
+        <item name="Negative">Negative</item>
+    </string-array>
+
+    <string-array name="job">
+        <item name="">Job</item>
+        <item name="Pelajar">Pelajar</item>
+        <item name="Wiraswasta">Wiraswasta</item>
+        <item name="PNS">PNS</item>
+        <item name="Lainnya">Lainnya</item>
+    </string-array>
 
     <string name="Almost">Almost There</string>
     <string name="TextAlmost">Thank you for Registering with us. One More\nStep, you need to Check your Email\nto Active your Account</string>
 
-    <string name="VerifyAccount">Verify your Account</string>
-    <string name="TextVerifyAcount">We have send verification code to your email</string>
-    <string name="EdtVerifyAccount">enter verification code here...</string>
-    <string name="TextVerifyAccountdoesnt">"doesn't get the code ? "</string>
+    <string name="ver_txt_acc">Verify your Account</string>
+    <string name="ver_txt_ver">We have send verification code to your email</string>
+    <string name="ver_txt_enter">enter verification code here...</string>
+    <string name="ver_txt_code">"doesn't get the code ? "</string>
+    <string name="ver_txt_resend">Resend</string>
 
     <string name="NamaSendiri">Ari Sumardi</string>
     <string name="BloodyTypeSendiri">Blood type : A</string>
+
 
 </resources>

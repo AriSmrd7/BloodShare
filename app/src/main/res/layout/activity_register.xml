@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/ic_header">
 
+
         <ImageButton
             android:id="@+id/btn_back_reg"
             android:layout_width="35dp"
@@ -50,7 +51,8 @@
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:autofillHints="" />
 
 
         <EditText
@@ -61,7 +63,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_below="@id/input_user_reg"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/input_phone_reg"
@@ -71,7 +74,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_below="@id/input_email_reg"
-            android:inputType="text|number" />
+            android:inputType="text|number"
+            android:autofillHints="" />
 
         <RadioButton
             android:id="@+id/radio_male_reg"
@@ -90,23 +94,24 @@
             android:layout_below="@id/input_phone_reg"
             android:layout_toRightOf="@id/radio_male_reg" />
 
-        <EditText
+        <Spinner
             android:id="@+id/spinner_blood_reg"
-            android:layout_width="wrap_content"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:hint="@string/blood_reg"
-            android:drawableEnd="@drawable/ic_register_dropdown"
+            android:entries="@array/gol_dar"
             android:layout_marginStart="20dp"
-            android:layout_below="@id/radio_male_reg" />
+            android:layout_below="@id/radio_male_reg"
+            android:layout_marginTop="5dp" />
 
-        <EditText
-            android:layout_width="wrap_content"
+        <Spinner
+            android:id="@+id/spinner_reshus_reg"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:hint="@string/resh_reg"
-            android:drawableEnd="@drawable/ic_register_dropdown"
+            android:entries="@array/reshus"
             android:layout_below="@id/radio_male_reg"
             android:layout_toRightOf="@id/spinner_blood_reg"
-            android:layout_marginStart="30dp" />
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp" />
 
         <EditText
             android:id="@+id/input_pass_reg"
@@ -144,16 +149,17 @@
             android:layout_below="@+id/input_repass_reg"
             android:layout_toRightOf="@id/radio_person_reg" />
 
-        <EditText
+        <Spinner
             android:id="@+id/spinner_job_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/job_reg"
-            android:drawableEnd="@drawable/ic_register_dropdown"
+            android:layout_below="@id/radio_person_reg"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_below="@id/radio_person_reg" />
+            android:dropDownSelector="@drawable/ic_register_dropdown"
+            android:entries="@array/job" />
+
 
         <EditText
             android:id="@+id/input_address_reg"

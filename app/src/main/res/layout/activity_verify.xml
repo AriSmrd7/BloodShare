@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verify">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/AquaDanon"
+        android:paddingTop="100dp">
+
+        <TextView
+            android:id="@+id/ver_tv_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ver_txt_acc"
+            android:gravity="center"
+            android:textColor="@color/EditextBlue"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/TvTextVerifyAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ver_txt_ver"
+            android:gravity="center"
+            android:textColor="@color/EditextBlue"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ver_tv_acc" />
+
+        <EditText
+            android:id="@+id/input_ver_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ver_txt_enter"
+            android:gravity="center"
+            android:textColorHint="@color/EditextBlue"
+            android:backgroundTint="@color/EditextBlue"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/TvTextVerifyAccount" />
+
+        <Button
+            android:id="@+id/btn_send_ver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:textColor="@color/EditextBlue"
+            android:background="@drawable/main_btn"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/input_ver_acc" />
+
+        <TextView
+            android:id="@+id/ver_tv_doesnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ver_txt_code"
+            android:textColor="@color/EditextBlue"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_below="@+id/btn_send_ver" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ver_txt_resend"
+            android:textColor="@color/EditextBlue"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/ver_tv_doesnt"
+            android:layout_below="@+id/btn_send_ver" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
