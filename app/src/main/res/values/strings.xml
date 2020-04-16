@@ -7,4 +7,41 @@
     <string name="txt_main_or"><b>OR</b></string>
     <string name="txt_main_acc">doesnt have account?</string>
     <string name="txt_main_reg"><b>Register</b></string>
+
+    <string name="user_reg">Username</string>
+    <string name="email_reg">Email</string>
+    <string name="phone_reg">Phone</string>
+    <string name="male_reg">Male</string>
+    <string name="female_reg">Female</string>
+    <string name="pass_reg">Phone</string>
+    <string name="blood_reg">Blood Type       </string>
+    <string name="resh_reg">Reshus</string>
+    <string name="repass_reg">Retype Password</string>
+    <string name="personal_reg">Personal</string>
+    <string name="organ_reg">Organization</string>
+    <string name="job_reg">Job</string>
+    <string name="home_reg">Home Address</string>
+    <string name="loc_reg">Default Location</string>
+    <string name="txt_reg">Register</string>
+    <string name="terms_reg">Agree with Terms and Condition</string>
+
+    <string-array name="Blood_Type">
+        <item name="A" />
+        <item name="B" />
+        <item name="O" />
+        <item name="AB" />
+    </string-array>
+
+
+    <string name="Almost">Almost There</string>
+    <string name="TextAlmost">Thank you for Registering with us. One More\nStep, you need to Check your Email\nto Active your Account</string>
+
+    <string name="VerifyAccount">Verify your Account</string>
+    <string name="TextVerifyAcount">We have send verification code to your email</string>
+    <string name="EdtVerifyAccount">enter verification code here...</string>
+    <string name="TextVerifyAccountdoesnt">"doesn't get the code ? "</string>
+
+    <string name="NamaSendiri">Ari Sumardi</string>
+    <string name="BloodyTypeSendiri">Blood type : A</string>
+
 </resources>
