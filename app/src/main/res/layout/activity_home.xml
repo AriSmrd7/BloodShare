@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/home_img"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/ic_header_profile"
+            android:scaleType="fitXY"
+            android:baseline="5dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@color/profile_circle"
+            android:layout_below="@+id/home_img" />
+
+        <ImageView
+            android:id="@+id/home_img_menu_slide"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_side_menu"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_notification"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/home_img_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/logo_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_profile_default_large" />
+
+        <TextView
+            android:id="@+id/home_tv_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NamaSendiri"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/AquaDanon"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/home_img_profile" />
+
+        <TextView
+            android:id="@+id/home_tv_blood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/BloodyTypeSendiri"
+            android:gravity="center"
+            android:layout_below="@+id/home_tv_nama" />
+
+        <View
+            android:id="@+id/View1"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/whitethree"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/home_tv_blood" />
+
+        <TextView
+            android:id="@+id/home_tv_blood_give"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_blood_give"
+            android:textSize="30dp"
+            android:textColor="@color/AquaDanon"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/View1" />
+
+        <TextView
+            android:id="@+id/home_tv_blood_received"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_blood_received"
+            android:textSize="30dp"
+            android:textColor="@color/AquaDanon"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/home_tv_blood_give"
+            android:layout_below="@+id/View1" />
+
+        <TextView
+            android:id="@+id/home_tv_thanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_blood_thanks"
+            android:textSize="30dp"
+            android:textColor="@color/AquaDanon"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/home_tv_blood_received"
+            android:layout_below="@+id/View1" />
+
+        <TextView
+            android:id="@+id/home_txt_blood_gv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_title_blood_give"
+            android:layout_marginStart="33dp"
+            android:layout_below="@id/home_tv_blood_give" />
+
+        <TextView
+            android:id="@+id/home_txt_blood_rc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_title_blood_received"
+            android:layout_marginStart="45dp"
+            android:layout_toRightOf="@id/home_txt_blood_gv"
+            android:layout_below="@id/home_tv_blood_give" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_title_blood_thanks"
+            android:layout_marginStart="55dp"
+            android:layout_toRightOf="@id/home_txt_blood_rc"
+            android:layout_below="@id/home_tv_blood_give" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/whitethree"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/home_txt_blood_gv" />
+
+        <Button
+            android:id="@+id/home_btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_title_search_donor"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/ic_search_donor"
+            android:background="@drawable/btn_main_use"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_below="@+id/view2" />
+
+        <Button
+            android:id="@+id/home_btn_needed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_title_blood_needed"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/ic_blood_needed"
+            android:background="@drawable/btn_main_use"
+            android:layout_below="@+id/view2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/home_tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/home_title_near"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/home_btn_search" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/home_needed"
+            android:layout_marginEnd="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/home_btn_needed" />
+
+        <Button
+            android:id="@+id/home_btn_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_btn_msg"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/ic_message"
+            android:background="@drawable/btn_main_use"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/home_tv_search" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_donor_history"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/ic_donor_history"
+            android:background="@drawable/btn_main_use"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/home_tv_search" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/home_new_msg"
+            android:layout_marginStart="46dp"
+            android:layout_below="@id/home_btn_msg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/home_give_received"
+            android:layout_marginEnd="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/home_btn_msg" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

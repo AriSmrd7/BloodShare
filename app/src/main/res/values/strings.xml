@@ -59,5 +59,20 @@
     <string name="NamaSendiri">Ari Sumardi</string>
     <string name="BloodyTypeSendiri">Blood type : A</string>
 
+    <string name="home_blood_give">87</string>
+    <string name="home_blood_received">103</string>
+    <string name="home_blood_thanks">177</string>
+    <string name="home_title_blood_give">Blood Give</string>
+    <string name="home_title_blood_received">Blood Received</string>
+    <string name="home_title_blood_thanks">Thanks</string>
+    <string name="home_title_search_donor">Search Donor</string>
+    <string name="home_title_blood_needed">Blood Needed</string>
+    <string name="home_title_near">Search donor near you</string>
+    <string name="home_needed">3 User need blood</string>>
+    <string name="home_btn_msg">Message</string>>
+    <string name="home_donor_history">Donor History</string>
+    <string name="home_new_msg">4 New Messages</string>
+    <string name="home_give_received">3 Gives, 1 Received</string>
+
 
 </resources>

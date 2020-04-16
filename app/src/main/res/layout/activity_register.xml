@@ -192,7 +192,7 @@
             android:layout_below="@id/spinner_loc_reg" />
 
         <Button
-            android:id="@+id/BtnRegister"
+            android:id="@+id/reg_btn_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/txt_reg"
