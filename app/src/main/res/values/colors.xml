@@ -9,4 +9,8 @@
     <color name="txt_header_reg">#F6FCFE</color>
     <color name="txt_btn_reg">#96D4F2</color>
     <color name="profile_circle">#E7E8EA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightBlue">#43b3e6</color>
+    <color name="black">#000000</color>
+    <color name="separator">#939597</color>
 </resources>

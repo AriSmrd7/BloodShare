@@ -57,6 +57,13 @@ class Register : AppCompatActivity() {
             } else if (jdarah.equals("Blood Type")) {
                 Toast.makeText(this, "Pilih Golongan Darahnya :)", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
+            } else if (!cb_term_reg.isChecked()) {
+                Toast.makeText(
+                    this,
+                    "Mohon Check Ketentuan dan Kebijakannya :)",
+                    Toast.LENGTH_SHORT
+                ).show()
+                return@setOnClickListener
             } else {
                 val intent = Intent(this, Almost::class.java)
                 intent.putExtra("Nama", name)

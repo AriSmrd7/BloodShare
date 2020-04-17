@@ -1,230 +1,320 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home">
 
-    <RelativeLayout
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-        <ImageView
-            android:id="@+id/home_img"
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:src="@drawable/ic_header_profile"
-            android:scaleType="fitXY"
-            android:baseline="5dp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="6dp"
-            android:background="@color/profile_circle"
-            android:layout_below="@+id/home_img" />
+        android:layout_height="150dp"
+        android:background="@drawable/ic_header_profile"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/home_img_menu_slide"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
             android:src="@drawable/ic_side_menu"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:scaleType="fitXY" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="14dp"
             android:src="@drawable/ic_notification"
-            android:scaleType="fitXY"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_alignParentEnd="true" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
-        <ImageView
-            android:id="@+id/home_img_profile"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/logo_profile"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="120dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/ic_profile_default_large" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profimage"
+        android:layout_width="0dp"
+        android:layout_height="108dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:src="@drawable/home_foto_profil"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/profimage"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/home_tv_nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:textColor="@color/AquaDanon"
             android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/home_img_profile" />
+            android:textColor="@color/EditextBlue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/home_tv_blood"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_below="@+id/home_tv_nama" />
+            android:textSize="15sp" />
 
-        <View
-            android:id="@+id/View1"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@color/whitethree"
-            android:layout_marginTop="10dp"
-            android:layout_below="@id/home_tv_blood" />
-
-        <TextView
-            android:id="@+id/home_tv_blood_give"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/home_blood_give"
-            android:textSize="30dp"
-            android:textColor="@color/AquaDanon"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/View1" />
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:weightSum="3">
 
-        <TextView
-            android:id="@+id/home_tv_blood_received"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/home_blood_received"
-            android:textSize="30dp"
-            android:textColor="@color/AquaDanon"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@id/home_tv_blood_give"
-            android:layout_below="@+id/View1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/home_tv_thanks"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/home_blood_thanks"
-            android:textSize="30dp"
-            android:textColor="@color/AquaDanon"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@id/home_tv_blood_received"
-            android:layout_below="@+id/View1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/home_blood_give"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/home_txt_blood_gv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/home_title_blood_give"
-            android:layout_marginStart="33dp"
-            android:layout_below="@id/home_tv_blood_give" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="2dp"
+                    android:text="@string/home_title_blood_give"
+                    android:textSize="10dp" />
 
-        <TextView
-            android:id="@+id/home_txt_blood_rc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/home_title_blood_received"
-            android:layout_marginStart="45dp"
-            android:layout_toRightOf="@id/home_txt_blood_gv"
-            android:layout_below="@id/home_tv_blood_give" />
+            </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/home_title_blood_thanks"
-            android:layout_marginStart="55dp"
-            android:layout_toRightOf="@id/home_txt_blood_rc"
-            android:layout_below="@id/home_tv_blood_give" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-        <View
-            android:id="@+id/view2"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/home_blood_received"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="2dp"
+                    android:text="@string/home_title_blood_received"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/home_blood_thanks"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="2dp"
+                    android:text="@string/home_title_blood_thanks"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@color/whitethree"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/home_txt_blood_gv" />
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/home_btn_search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/home_title_search_donor"
-            android:textAllCaps="false"
-            android:drawableTop="@drawable/ic_search_donor"
-            android:background="@drawable/btn_main_use"
-            android:layout_marginTop="30dp"
-            android:layout_marginStart="50dp"
-            android:layout_below="@+id/view2" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp">
 
-        <Button
-            android:id="@+id/home_btn_needed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/home_title_blood_needed"
-            android:textAllCaps="false"
-            android:drawableTop="@drawable/ic_blood_needed"
-            android:background="@drawable/btn_main_use"
-            android:layout_below="@+id/view2"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="50dp"
-            android:layout_marginTop="30dp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_search_donor" />
 
-        <TextView
-            android:id="@+id/home_tv_search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/home_title_near"
-            android:layout_marginStart="30dp"
-            android:layout_below="@id/home_btn_search" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/home_title_search_donor"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/home_needed"
-            android:layout_marginEnd="43dp"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@id/home_btn_needed" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/home_title_near"
+                    android:textSize="10dp" />
 
-        <Button
-            android:id="@+id/home_btn_msg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/home_btn_msg"
-            android:textAllCaps="false"
-            android:drawableTop="@drawable/ic_message"
-            android:background="@drawable/btn_main_use"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="30dp"
-            android:layout_below="@id/home_tv_search" />
+            </LinearLayout>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/home_donor_history"
-            android:textAllCaps="false"
-            android:drawableTop="@drawable/ic_donor_history"
-            android:background="@drawable/btn_main_use"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="50dp"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@id/home_tv_search" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/home_new_msg"
-            android:layout_marginStart="46dp"
-            android:layout_below="@id/home_btn_msg" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_blood_needed" />
 
-        <TextView
-            android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/home_title_blood_needed"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/home_needed"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/home_give_received"
-            android:layout_marginEnd="36dp"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@id/home_btn_msg" />
-    </RelativeLayout>
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_message" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/home_btn_msg"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/home_new_msg"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_donor_history" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/home_donor_history"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/home_give_received"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
