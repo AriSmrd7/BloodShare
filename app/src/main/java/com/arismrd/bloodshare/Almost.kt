@@ -7,7 +7,11 @@ import kotlinx.android.synthetic.main.activity_almost.*
 
 
 class Almost : AppCompatActivity() {
-
+    /* 16/04/2020
+    *  10117162
+    *  ARISUMARDI
+    *  IF4
+    * */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_almost)

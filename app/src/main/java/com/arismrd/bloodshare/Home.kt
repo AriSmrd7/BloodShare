@@ -5,7 +5,11 @@ import android.os.Bundle
 import android.widget.TextView
 
 class Home : AppCompatActivity() {
-
+    /* 16/04/2020
+    *  10117162
+    *  ARISUMARDI
+    *  IF4
+    * */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)

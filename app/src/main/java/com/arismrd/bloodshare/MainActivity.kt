@@ -7,7 +7,11 @@ import android.widget.TextView
 
 
 class MainActivity : AppCompatActivity() {
-
+    /* 16/04/2020
+    *  10117162
+    *  ARISUMARDI
+    *  IF4
+    * */
     private lateinit var register: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {

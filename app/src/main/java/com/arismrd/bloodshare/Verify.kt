@@ -7,7 +7,11 @@ import android.widget.Button
 import kotlinx.android.synthetic.main.activity_verify.*
 
 class Verify : AppCompatActivity() {
-
+    /* 16/04/2020
+    *  10117162
+    *  ARISUMARDI
+    *  IF4
+    * */
     lateinit var GoHome: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {

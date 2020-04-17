@@ -8,7 +8,11 @@ import android.widget.*
 import kotlinx.android.synthetic.main.activity_register.*
 
 class Register : AppCompatActivity() {
-
+    /* 16/04/2020
+    *  10117162
+    *  ARISUMARDI
+    *  IF4
+    * */
     var BloodType: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
