@@ -3,17 +3,24 @@ package com.arismrd.bloodshare
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import kotlinx.android.synthetic.main.activity_almost.*
+
 
 class Almost : AppCompatActivity() {
-    private lateinit var Verif: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_almost)
-        Verif = findViewById(R.id.ver_btn_ver)
-        Verif.setOnClickListener {
-            startActivity(Intent(this, Verify::class.java))
+
+        var intent = intent
+        val nama = intent.getStringExtra("Nama")
+        val goldar = intent.getStringExtra("Blood")
+
+        al_btn_al.setOnClickListener {
+            val intent = Intent(this, Verify::class.java)
+            intent.putExtra("Nama", nama)
+            intent.putExtra("Blood", goldar)
+            startActivity(intent)
         }
     }
 }

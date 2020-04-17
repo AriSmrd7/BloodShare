@@ -32,10 +32,10 @@
             android:layout_below="@+id/txt_view_almost" />
 
         <Button
-            android:id="@+id/ver_btn_ver"
+            android:id="@+id/al_btn_al"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Verify"
+            android:text="@string/almost"
             android:textColor="@color/EditextBlue"
             android:background="@drawable/main_btn"
             android:layout_marginStart="20dp"

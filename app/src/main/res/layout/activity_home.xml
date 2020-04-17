@@ -56,7 +56,6 @@
             android:id="@+id/home_tv_nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/NamaSendiri"
             android:textSize="30dp"
             android:textStyle="bold"
             android:textColor="@color/AquaDanon"
@@ -68,7 +67,6 @@
             android:id="@+id/home_tv_blood"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/BloodyTypeSendiri"
             android:gravity="center"
             android:layout_below="@+id/home_tv_nama" />
 
